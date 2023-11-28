@@ -1,0 +1,48 @@
+*{
+    background-color: grey;
+    margin-left: 0px;
+}
+
+header {
+    background-color: grey;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    height: 100vh; /* Ocupar toda la altura de la pantalla */
+    flex-direction: column; /* Apilar elementos verticalmente */
+    margin-top: -16%;
+    margin-left: 0px;
+}
+
+.top {
+    text-align: center; /* Centrar el texto horizontalmente */
+    background-color: white;
+}
+
+.sm{
+    background-color: white;
+}
+
+.abajo{
+    margin-top: -25px;
+    background-color: white;
+}
+
+.navbar {
+    width: 10%;
+    margin-right: 10px;
+    background-color: white;
+    margin-left: 10px;
+}
+
+.navbar a{
+    display: block; /* Mostrar cada enlace como un bloque */
+    margin-bottom: 10px; /* Espacio entre cada enlace */
+    background-color: white;
+}
+
+.subdiv{
+    margin-left: 25px;
+    background-color: white;
+    border-left: 2px solid black; /* Línea negra a la izquierda */
+    padding-left: 10px;
+}
