@@ -156,15 +156,18 @@ main {
 .content {
     margin-left: 200px; /* Ancho del navbar */
     padding: 20px; /* Ajusta según necesites */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* ------------------------------------------------------------------------------------------------------------------ */
+/* tema slider */
 
 .slider-container {
     position: relative;
-    width: 600px; /* Ancho del contenedor ajustado al tamaño de las imágenes */
+    width: 1200px; /* Ancho del contenedor ajustado al tamaño de dos imágenes + espacio */
     overflow: hidden;
     margin: 0 auto; /* Centrar el contenedor */
-    margin-left: 26.5%;
 }
 
 .slider {
@@ -173,12 +176,18 @@ main {
 
 .slides {
     display: flex;
-    width: calc(300px * 3); /* Ancho total de las imágenes */
+    width: max-content; /* Ancho total ajustado al contenido */
+    transition: transform 0.5s ease-in-out;
 }
 
 .slides img {
-    width: 600px; /* Ancho fijo para las imágenes */
-    height: 600px; /* Altura fija para las imágenes cuadradas */
+    width: 600px; /* Ancho fijo para cada imagen */
+    height: auto; /* Altura automática para mantener la proporción de la imagen */
+    padding-right: 40px; /* Espacio entre las imágenes */
+}
+
+.slides img:last-child {
+    padding-right: 0; /* Eliminar el espacio en la última imagen */
 }
 
 button.prev,
@@ -199,7 +208,7 @@ button.prev {
 }
 
 button.next {
-    right: 10px;
+    right: 40px;
 }
 
 /* -------------------------------------------------------------------------------------------------------------------- */
