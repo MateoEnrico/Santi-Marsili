@@ -465,3 +465,75 @@ footer {
         background-color: rgb(248, 248, 248)
     } 
 }
+
+@media (max-width: 420px) {
+    .top1{
+        margin-left:10px;
+        z-index: 2;
+        background-color: rgb(255, 255, 255);
+        width: 150px;
+        border-radius: 100px;
+        margin-top: 70px;
+        height: 35px;
+    }
+    .top2{
+        margin-top: 60px;
+        margin-right: 70px;
+    }
+    .menu-btn {
+        display: block;
+        width: 40px; /* Ajusta el ancho según sea necesario */
+        height: 40px; /* Ajusta la altura según sea necesario */
+        background-color: rgb(114, 19, 19); /* Color de fondo del botón */
+        color: white; /* Color del texto del botón */
+        border: none; /* Elimina el borde del botón */
+        font-size: 25px; /* Tamaño del texto */
+        text-align: center; /* Centra el contenido del botón */
+        cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+        position: fixed; /* Posición fija */
+        top: 90px; /* Posiciona el botón a la altura deseada */
+        right: 30px; /* Posiciona el botón a la distancia deseada desde el borde derecho */
+        z-index: 1500; /* Asegura que el botón esté por encima de otros elementos */
+    }
+    .slider-container {
+        position: relative;
+        width: 300px; /* Ancho del contenedor ajustado al tamaño de dos imágenes + espacio */
+        overflow: hidden;
+        margin: 0 auto; /* Centrar el contenedor */
+    }
+    .slides img {
+        width: 300px; /* Ancho fijo para cada imagen */
+        height: auto; /* Altura automática para mantener la proporción de la imagen */
+    }
+}
+
+@media (max-width: 375px){
+    .top1{
+        margin-left:5px;
+        z-index: 2;
+        background-color: rgb(255, 255, 255);
+        width: 150px;
+        border-radius: 100px;
+        margin-top: 70px;
+        height: 35px;
+    }
+    .top2{
+        margin-top: 60px;
+        margin-right: 60px;
+    }
+    .menu-btn {
+        display: block;
+        width: 40px; /* Ajusta el ancho según sea necesario */
+        height: 40px; /* Ajusta la altura según sea necesario */
+        background-color: rgb(114, 19, 19); /* Color de fondo del botón */
+        color: white; /* Color del texto del botón */
+        border: none; /* Elimina el borde del botón */
+        font-size: 25px; /* Tamaño del texto */
+        text-align: center; /* Centra el contenido del botón */
+        cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+        position: fixed; /* Posición fija */
+        top: 90px; /* Posiciona el botón a la altura deseada */
+        right: 20px; /* Posiciona el botón a la distancia deseada desde el borde derecho */
+        z-index: 1500; /* Asegura que el botón esté por encima de otros elementos */
+    }
+}
