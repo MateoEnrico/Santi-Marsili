@@ -372,84 +372,96 @@ footer {
 }
 
 @media (max-width: 630px) {
+    .navbar {
+        /* ... (otros estilos) ... */
+        /* Ajustes para que el menú sea visible al abrirse */
+        display: none; /* Ocultar inicialmente el menú */
+        position: fixed; /* Posición fija para mantenerlo en la pantalla */
+        top: 150px; /* Ajusta la distancia desde la parte superior según sea necesario */
+        left: 0; /* Alinear el menú a la izquierda */
+        width: 200px; /* Ancho del menú */
+        z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+    }
+    
+    /* Estilos cuando el menú está activo */
+    .navbar.show-menu {
+        display: block; /* Muestra el menú cuando tiene la clase 'show-menu' */
+    }
+    .top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 150px;
+        background-color: rgb(114, 19, 19);
+        text-align: center;
+        color: white;
+        font-size: 25px;
+    }
     .top1{
-        margin-left: -5px;
-        margin-top: 400px;
+        margin-left:30px;
         z-index: 2;
-        background-color: rgb(56, 56, 56);
-        width: 120px;
+        background-color: rgb(255, 255, 255);
+        width: 150px;
+        border-radius: 100px;
+        margin-top: 70px;
+        height: 35px;
     }
     audio{
-        margin-left: 0px;
         border-radius: 100px;
-        width: 120px;
-        background-color: none;
-    }
-    .navbar {
-        position: fixed;
-        bottom: 0;
-        left: 0;
         width: 150px;
-        top: 100px; /* Altura del header */
-        background-color: white;
-        border: 5px double rgb(189, 9, 9);
-        border-top-right-radius: 50px;
-        background-color: rgb(56, 56, 56);
+        background-color: none;
+        height: 35px;
     }
-    .afuera{
-        margin-top: 10px;
-        display: block; /* Mostrar cada enlace como un bloque */
-        margin-bottom: 10px; /* Espacio entre cada enlace */
-        background-color: rgb(56, 56, 56);
-        margin-left: 7px;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        font-size: 20px;
-        margin-right: 40px;
+    .top2{
+        margin-top: 60px;
+        margin-right: 90px;
+    }
+    .ig{
+        width: 27px;
+        height: 27px;
+        background-color: rgb(114, 19, 19);
+        margin-right: 5px;
     }
     
-    
-    .afuera:hover{
-        color: aliceblue ;
-        font-size: 22px;
-        transition-duration: 0.15s;
-        text-decoration: underline;
+    .ws{
+        width: 40px;
+        height: 58px;
+        background-color: rgb(114, 19, 19);
+        margin-top: -15px;
+        margin-left: 4px;
     }
-    .adentro{
-        display: block; /* Mostrar cada enlace como un bloque */
-        margin-bottom: 7px; /* Espacio entre cada enlace */
-        background-color: rgb(56, 56, 56);
-        margin-left: 10px;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        font-size: 15px;
+    .menu-btn {
+        display: block;
+        width: 40px; /* Ajusta el ancho según sea necesario */
+        height: 40px; /* Ajusta la altura según sea necesario */
+        background-color: rgb(114, 19, 19); /* Color de fondo del botón */
+        color: white; /* Color del texto del botón */
+        border: none; /* Elimina el borde del botón */
+        font-size: 25px; /* Tamaño del texto */
+        text-align: center; /* Centra el contenido del botón */
+        cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+        position: fixed; /* Posición fija */
+        top: 90px; /* Posiciona el botón a la altura deseada */
+        right: 50px; /* Posiciona el botón a la distancia deseada desde el borde derecho */
+        z-index: 1500; /* Asegura que el botón esté por encima de otros elementos */
     }
-    .adentro:hover{
-        color: rgb(255, 5, 5);
-        font-size: 16.5px;
-        transition-duration: 0.2s;
-        text-decoration: underline;
+    main {
+        padding-top: 150px;
+        padding-bottom: 50px;
+        z-index: 1; /* Asegura que el contenido esté por encima del slider */
+        position: relative; /* Añade posición relativa */
     }
     .content {
-        margin-left: 150px; /* Ancho del navbar */
+        margin-left: 0px; /* Ancho del navbar */
         padding: 20px; /* Ajusta según necesites */
         text-align:center;
     }
-    .slider-container {
-        position: relative;
-        width: 300px; /* Ancho del contenedor ajustado al tamaño de dos imágenes + espacio */
-        overflow: hidden;
-        margin: 0 auto; /* Centrar el contenedor */
-    }
-    .slides img {
-        width: 300px; /* Ancho fijo para cada imagen */
-        height: auto; /* Altura automática para mantener la proporción de la imagen */
-    }
-    .info{
-        margin-right: 5px;
-        margin-left: 5px;
-        font-family: 'Inter', sans-serif;
-        margin-bottom: 30px;
-        text-align: justify;
-    }
+    footer {
+        margin-left: 0; /* Ancho del navbar */
+        padding: 20px; /* Ajusta según necesites */
+        text-align:center;
+        bottom: 0;
+        background-color: rgb(248, 248, 248)
+    } 
 }
