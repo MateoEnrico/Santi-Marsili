@@ -300,6 +300,7 @@ footer {
     .slides img {
         width: 600px; /* Ancho fijo para cada imagen */
         height: auto; /* Altura automática para mantener la proporción de la imagen */
+        padding-right: 0px;
     }
     .info{
         margin-right: 70px;
@@ -327,7 +328,7 @@ footer {
         position: relative;
         width: 500px; /* Ancho del contenedor ajustado al tamaño de dos imágenes + espacio */
         overflow: hidden;
-        margin: 0 auto; /* Centrar el contenedor */
+        margin: auto; /* Centrar el contenedor */
     }
     .slides img {
         width: 500px; /* Ancho fijo para cada imagen */
@@ -456,6 +457,7 @@ footer {
         margin-left: 0px; /* Ancho del navbar */
         padding: 20px; /* Ajusta según necesites */
         text-align:center;
+        align-items: center;
     }
     footer {
         margin-left: 0; /* Ancho del navbar */
@@ -592,5 +594,15 @@ footer {
         top: 70px; /* Posiciona el botón a la altura deseada */
         right: 14px; /* Posiciona el botón a la distancia deseada desde el borde derecho */
         z-index: 1500; /* Asegura que el botón esté por encima de otros elementos */
+    }
+    .navbar {
+        /* ... (otros estilos) ... */
+        /* Ajustes para que el menú sea visible al abrirse */
+        display: none; /* Ocultar inicialmente el menú */
+        position: fixed; /* Posición fija para mantenerlo en la pantalla */
+        top: 130px; /* Ajusta la distancia desde la parte superior según sea necesario */
+        left: 0; /* Alinear el menú a la izquierda */
+        width: 200px; /* Ancho del menú */
+        z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
     }
 }
