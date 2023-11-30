@@ -583,7 +583,7 @@ footer {
 }
 
 
-@media (max-width: 375px){
+@media (max-width: 375px){ /* Desde aca*/
     button.next{
         right: 10px;
     }
@@ -773,6 +773,12 @@ footer {
         width: 125px;
         background-color: none;
         height: 32px;
+    }
+    main {
+        padding-top: 85px;
+        padding-bottom: 50px;
+        z-index: 1; /* Asegura que el contenido esté por encima del slider */
+        position: relative; /* Añade posición relativa */
     }
     .slider-container {
         position: relative;
