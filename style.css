@@ -819,17 +819,17 @@ footer {
         z-index: 1500; /* Asegura que el botón esté por encima de otros elementos */
     }
     .top1{
-        margin-left:20px;
+        margin-left:15px;
         z-index: 2;
         background-color: rgb(255, 255, 255);
-        width: 120px;
+        width: 125px;
         border-radius: 100px;
         margin-top: 35px;
         height: 32px;
     }
     audio{
         border-radius: 100px;
-        width: 120px;
+        width: 125px;
         background-color: none;
         height: 32px;
     }
