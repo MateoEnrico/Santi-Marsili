@@ -373,20 +373,48 @@ footer {
 }
 
 @media (max-width: 630px) {
+    /* Estilos cuando el menú está activo */
     .navbar {
-        /* ... (otros estilos) ... */
-        /* Ajustes para que el menú sea visible al abrirse */
-        display: none; /* Ocultar inicialmente el menú */
-        position: fixed; /* Posición fija para mantenerlo en la pantalla */
-        top: 150px; /* Ajusta la distancia desde la parte superior según sea necesario */
-        left: 0; /* Alinear el menú a la izquierda */
-        width: 200px; /* Ancho del menú */
-        z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+        width: 100%;
+        left: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+        background-color: rgb(56, 56, 56);
+        color: white;
+        padding: 10px;
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+        position: fixed;
+        top: -100%; /* Mueve el menú fuera de la pantalla */
+        max-height: 0; /* Oculta el menú por defecto */
+        transition: top 0.5s ease-in-out, max-height 0.5s ease-in-out;
+        border-top-right-radius: 0;
+        z-index: -1;
+      }
+      
+      /* Estilos cuando el menú está abierto */
+      .navbar.show-menu {
+        top: 150px; /* Posición desde arriba */
+        max-height: calc(100% - 200px); /* Altura del menú */
+        transition: top 0.5s ease-in-out, max-height 0.5s ease-in-out;
+      }
+    .afuera, .adentro {
+        display: block;
+        padding: 15px 20px; /* Aumentar el relleno para mejorar la selección en móviles */
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        transition-duration: 0.2s;
+    }
+    .afuera:hover, .adentro:hover {
+        color: rgb(255, 5, 5);
+        text-decoration: underline;
     }
     
-    /* Estilos cuando el menú está activo */
-    .navbar.show-menu {
-        display: block; /* Muestra el menú cuando tiene la clase 'show-menu' */
+    .subdiv {
+        border-left: 2px solid rgb(255, 255, 255);
+        padding-left: 15px;
     }
     .top {
         position: fixed;
