@@ -891,7 +891,7 @@ footer {
         background-color: rgb(114, 19, 19);
         color: rgb(255, 255, 255);
         text-decoration: underline;
-        font-size: 33px;
+        font-size: 20px;/* 33 */
     }
     .abajo{
         margin-top: -6px;
