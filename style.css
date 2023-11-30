@@ -420,6 +420,7 @@ footer {
         color: rgb(255, 255, 255);
         font-size: 18px;
         transition-duration: 0.2s;
+        width: 100%;
     }
     .afuera:hover, .adentro:hover {
         color: rgb(255, 5, 5);
@@ -687,7 +688,7 @@ footer {
         background-color: rgb(114, 19, 19);
         color: rgb(255, 255, 255);
         text-decoration: underline;
-        font-size: 40px;
+        font-size: 38px;
     }
     .abajo{
         margin-top: -7px;
@@ -696,7 +697,7 @@ footer {
         letter-spacing: 9px;
         white-space: pre;
         margin-left: 8px;
-        font-size: 18px;
+        font-size: 16.5px;
     }
     .top1{
         margin-left:2px;
@@ -773,7 +774,7 @@ footer {
         background-color: rgb(114, 19, 19);
         color: rgb(255, 255, 255);
         text-decoration: underline;
-        font-size: 40px;
+        font-size: 35px;
     }
     .abajo{
         margin-top: -7px;
@@ -782,7 +783,7 @@ footer {
         letter-spacing: 9px;
         white-space: pre;
         margin-left: 8px;
-        font-size: 18px;
+        font-size: 14px;
     }
     .top1{
         margin-left:2px;
