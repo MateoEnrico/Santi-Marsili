@@ -668,6 +668,12 @@ footer {
         right: 14px; /* Posiciona el botón a la distancia deseada desde el borde derecho */
         z-index: 1500; /* Asegura que el botón esté por encima de otros elementos */
     }
+    main {
+        padding-top: 110px;
+        padding-bottom: 50px;
+        z-index: 1; /* Asegura que el contenido esté por encima del slider */
+        position: relative; /* Añade posición relativa */
+    }
 }
 @media (max-width: 360px){
     button.next{
