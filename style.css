@@ -700,19 +700,13 @@ footer {
         font-size: 16.5px;
     }
     .top1{
-        margin-left:15px;
+        margin-left:5px;
         z-index: 2;
         background-color: rgb(255, 255, 255);
-        width: 125px;
+        width: 150px;
         border-radius: 100px;
-        margin-top: 35px;
-        height: 32px;
-    }
-    audio{
-        border-radius: 100px;
-        width: 125px;
-        background-color: none;
-        height: 32px;
+        margin-top: 70px;
+        height: 35px;
     }
     .top2{
         margin-top: 40px;
@@ -761,7 +755,7 @@ footer {
       /* Estilos cuando el menú está abierto */
     .navbar.show-menu {
         top: 100px; /* Posición desde arriba */
-        max-height: calc(100vh - 130px); /* Altura del menú */
+        max-height: calc(100vh - 100px); /* Altura del menú */
         transition: top 0.5s ease-in-out, max-height 0.5s ease-in-out;
         width: 100%;
     }
@@ -825,7 +819,7 @@ footer {
         z-index: 1500; /* Asegura que el botón esté por encima de otros elementos */
     }
     .top1{
-        margin-left:15px;
+        margin-left:10px;
         z-index: 2;
         background-color: rgb(255, 255, 255);
         width: 125px;
