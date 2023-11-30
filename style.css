@@ -391,6 +391,7 @@ footer {
         transition: top 0.5s ease-in-out, max-height 0.5s ease-in-out;
         border-top-right-radius: 0;
         z-index: -1;
+        overflow-y: auto;
     }
     
       /* Estilos cuando el menú está abierto */
@@ -514,6 +515,7 @@ footer {
         transition: top 0.5s ease-in-out, max-height 0.5s ease-in-out;
         border-top-right-radius: 0;
         z-index: -1;
+        overflow-y: auto;
     }
     
       /* Estilos cuando el menú está abierto */
@@ -580,12 +582,13 @@ footer {
         transition: top 0.5s ease-in-out, max-height 0.5s ease-in-out;
         border-top-right-radius: 0;
         z-index: -1;
+        overflow-y: auto;
     }
     
       /* Estilos cuando el menú está abierto */
     .navbar.show-menu {
         top: 150px; /* Posición desde arriba */
-        max-height: calc(100% - 200px); /* Altura del menú */
+        max-height: calc(100vh - 130px); /* Altura del menú */
         transition: top 0.5s ease-in-out, max-height 0.5s ease-in-out;
     }
     .top1{
@@ -636,12 +639,13 @@ footer {
         transition: top 0.5s ease-in-out, max-height 0.5s ease-in-out;
         border-top-right-radius: 0;
         z-index: -1;
+        overflow-y: auto;
     }
     
       /* Estilos cuando el menú está abierto */
     .navbar.show-menu {
         top: 130px; /* Posición desde arriba */
-        max-height: calc(100% - 200px); /* Altura del menú */
+        max-height: calc(100vh - 130px); /* Altura del menú */
         transition: top 0.5s ease-in-out, max-height 0.5s ease-in-out;
     }
     .top {
