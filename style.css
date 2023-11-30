@@ -614,7 +614,7 @@ footer {
         width: 100%;
     }
     .top1{
-        margin-left:5px;
+        margin-left:1px;
         z-index: 2;
         background-color: rgb(255, 255, 255);
         width: 150px;
@@ -819,7 +819,7 @@ footer {
         z-index: 1500; /* Asegura que el botón esté por encima de otros elementos */
     }
     .top1{
-        margin-left: 5px;
+        margin-left: 1px;
         z-index: 2;
         background-color: rgb(255, 255, 255);
         width: 125px;
