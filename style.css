@@ -777,7 +777,7 @@ footer {
         font-size: 35px;
     }
     .abajo{
-        margin-top: -7px;
+        margin-top: -6px;
         background-color: rgb(114, 19, 19);
         color: rgb(255, 252, 252);
         letter-spacing: 9px;
@@ -814,7 +814,7 @@ footer {
         text-align: center; /* Centra el contenido del botón */
         cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
         position: fixed; /* Posición fija */
-        top: 55px; /* Posiciona el botón a la altura deseada */
+        top: 53px; /* Posiciona el botón a la altura deseada */
         right: 17px; /* Posiciona el botón a la distancia deseada desde el borde derecho */
         z-index: 1500; /* Asegura que el botón esté por encima de otros elementos */
     }
