@@ -411,6 +411,7 @@ footer {
         top: 150px; /* Posición desde arriba */
         max-height: calc(100% - 200px); /* Altura del menú */
         transition: top 0.5s ease-in-out, max-height 0.5s ease-in-out;
+        width: 100%;
     }
     .afuera, .adentro {
         display: block;
@@ -538,6 +539,7 @@ footer {
         top: 150px; /* Posición desde arriba */
         max-height: calc(100% - 200px); /* Altura del menú */
         transition: top 0.5s ease-in-out, max-height 0.5s ease-in-out;
+        width: 100%;
     }
     .top1{
         margin-left:10px;
@@ -608,6 +610,7 @@ footer {
         top: 150px; /* Posición desde arriba */
         max-height: calc(100vh - 130px); /* Altura del menú */
         transition: top 0.5s ease-in-out, max-height 0.5s ease-in-out;
+        width: 100%;
     }
     .top1{
         margin-left:5px;
@@ -667,6 +670,7 @@ footer {
         top: 130px; /* Posición desde arriba */
         max-height: calc(100vh - 130px); /* Altura del menú */
         transition: top 0.5s ease-in-out, max-height 0.5s ease-in-out;
+        width: 100%;
     }
     .top {
         position: fixed;
@@ -752,6 +756,7 @@ footer {
         top: 130px; /* Posición desde arriba */
         max-height: calc(100vh - 130px); /* Altura del menú */
         transition: top 0.5s ease-in-out, max-height 0.5s ease-in-out;
+        width: 100%;
     }
     .top {
         position: fixed;
