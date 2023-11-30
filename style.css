@@ -822,14 +822,14 @@ footer {
         margin-left:20px;
         z-index: 2;
         background-color: rgb(255, 255, 255);
-        width: 100px;
+        width: 120px;
         border-radius: 100px;
         margin-top: 36px;
         height: 30px;
     }
     audio{
         border-radius: 100px;
-        width: 100px;
+        width: 120px;
         background-color: none;
         height: 30px;
     }
