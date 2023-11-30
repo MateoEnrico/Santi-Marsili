@@ -754,7 +754,7 @@ footer {
     
       /* Estilos cuando el menú está abierto */
     .navbar.show-menu {
-        top: 130px; /* Posición desde arriba */
+        top: 100px; /* Posición desde arriba */
         max-height: calc(100vh - 130px); /* Altura del menú */
         transition: top 0.5s ease-in-out, max-height 0.5s ease-in-out;
         width: 100%;
@@ -824,14 +824,14 @@ footer {
         background-color: rgb(255, 255, 255);
         width: 120px;
         border-radius: 100px;
-        margin-top: 36px;
-        height: 30px;
+        margin-top: 35px;
+        height: 32px;
     }
     audio{
         border-radius: 100px;
         width: 120px;
         background-color: none;
-        height: 30px;
+        height: 32px;
     }
     .slider-container {
         position: relative;
