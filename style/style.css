@@ -709,7 +709,7 @@ footer {
     .t-a{
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 60px;
         background-color: rgb(114, 19, 19);
     }
     .top {
