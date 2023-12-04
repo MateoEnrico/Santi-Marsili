@@ -336,7 +336,7 @@ footer {
     } 
 }
 
-@media (max-width: 420px){
+@media (max-width: 420px){ /* Desde aca*/
     .navbar {
         width: 100%;
         left: 0;
@@ -424,7 +424,7 @@ footer {
         z-index: 1; /* Asegura que el contenido esté por encima del slider */
         position: relative; /* Añade posición relativa */
     }
-}   
+}
 
 @media (max-width: 360px){
     .navbar {
