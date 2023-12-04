@@ -706,22 +706,21 @@ footer {
         transition: top 0.5s ease-in-out, max-height 0.5s ease-in-out;
         width: 100%;
     }
-    .t-a{
-        display: flex;
-        flex-direction: column;
-        gap: 60px;
+    header{
         background-color: rgb(114, 19, 19);
+        width: 100%;
     }
     .top {
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 90%;
         height: 100px;
         background-color: rgb(114, 19, 19);
         text-align: center;
         color: white;
         font-size: 25px;
+        margin: 0 auto;
     }
     .sm{
         background-color: rgb(114, 19, 19);
