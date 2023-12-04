@@ -597,7 +597,7 @@ footer {
 }
 
 
-@media (max-width: 420px){ /* Desde aca*/
+@media (max-width: 450px){ /* Desde aca*/
     button.next{
         right: 10px;
     }
