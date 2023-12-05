@@ -227,6 +227,12 @@ footer {
         margin-left: 100px;
         margin-right: 100px;
     }
+    .content {
+        margin-left: 200px; /* Ancho del navbar */
+        padding: 20px; /* Ajusta según necesites */
+        text-align:justify;
+        background-image: none;
+        background-color: white;
 }
 
 @media (max-width: 1020px) {
