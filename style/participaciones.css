@@ -159,14 +159,37 @@ main {
 .content {
     margin-left: 200px; /* Ancho del navbar */
     padding: 20px; /* Ajusta según necesites */
-    text-align:center;
+    text-align:justify;
+    background-image: url(../media/Participaciones/a-caballo.jpg);
+    background-size: auto 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: auto;
 }
 .h{
     font-family: 'Arimo', sans-serif;
+    text-align: center;
+    background-color: none;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    color: rgb(0, 0, 0);
 }
-p{
+.subtit{
+    margin-top: 20px;
     font-family: 'Arimo', sans-serif;
-    text-align: justify center;
+    text-decoration: underline;
+    text-align: center;
+    background-color: none;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    color: rgb(0, 0, 0);
+}
+.p{
+    margin-top: 10px;
+    font-family: 'Arimo', sans-serif;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
 }
 
 footer {
@@ -182,10 +205,25 @@ footer {
 }
 
 /* ------------------------------------------------------------------------------ */
+@media (max-width: 1280px){
+    .p{
+        margin-top: 10px;
+        font-family: 'Arimo', sans-serif;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
 @media (max-width: 1020px) {
     audio{
         border-radius: 100px;
         width: 200px;
+    }
+    .p{
+        margin-top: 10px;
+        font-family: 'Arimo', sans-serif;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 }
 
@@ -201,6 +239,12 @@ footer {
         border-radius: 100px;
         width: 150px;
         background-color: none;
+    }
+    .p{
+        margin-top: 10px;
+        font-family: 'Arimo', sans-serif;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
