@@ -190,6 +190,7 @@ main {
     margin-right: 150px;
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
+    border-radius: 8px;
 }
 
 footer {
@@ -205,6 +206,20 @@ footer {
 }
 
 /* ------------------------------------------------------------------------------ */
+@media (max-width: 1580px) {
+    .content {
+        margin-left: 200px; /* Ancho del navbar */
+        padding: 20px; /* Ajusta según necesites */
+        text-align:justify;
+        background-image: url(../media/Participaciones/a-caballo.jpg);
+        background-size: 90% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: auto;
+    }
+}
+
 @media (max-width: 1280px){
     .p{
         margin-top: 10px;
