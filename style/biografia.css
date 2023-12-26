@@ -167,6 +167,7 @@ main {
 p{
     font-family: 'Arimo', sans-serif;
     text-align: justify center;
+    margin-top: 5px;
 }
 
 footer {

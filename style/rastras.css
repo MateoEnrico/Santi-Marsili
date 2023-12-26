@@ -162,6 +162,27 @@ main {
     text-align:center;
 }
 
+.title{
+    font-family: 'Arimo', sans-serif;
+    text-decoration: underline;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 400px;
+    display: flex;
+    margin: 20px;
+}
+.img{
+    width: 400px;
+    border-radius: 10px;
+}
+
 footer {
     margin-left: 180px; /* Ancho del navbar */
     padding: 20px; /* Ajusta según necesites */
@@ -175,10 +196,31 @@ footer {
 }
 
 /* ------------------------------------------------------------------------------ */
+@media (max-width: 1120px){
+    .card{
+        width: 350px;
+        display: flex;
+        margin: 10px;
+    }
+    .img{
+        width: 350px;
+        border-radius: 10px;
+    }
+}
+
 @media (max-width: 1020px) {
     audio{
         border-radius: 100px;
         width: 200px;
+    }
+    .card{
+        width: 325px;
+        display: flex;
+        margin: 5px;
+    }
+    .img{
+        width: 325px;
+        border-radius: 10px;
     }
 }
 
@@ -534,5 +576,14 @@ footer {
         padding-bottom: 50px;
         z-index: 1; /* Asegura que el contenido esté por encima del slider */
         position: relative; /* Añade posición relativa */
+    }
+    .card{
+        width: 270px;
+        display: flex;
+        margin: 5px;
+    }
+    .img{
+        width: 270px;
+        border-radius: 10px;
     }
 }
