@@ -286,14 +286,6 @@ footer {
 }
 
 @media (max-width: 820px) {
-    .top1 {
-        margin-left: 5px;
-        margin-top: 450px;
-        z-index: 2;
-        background-color: rgb(56, 56, 56);
-        width: 150px;
-    }
-
     .audio-controls {
         position: fixed;
         display: flex;
@@ -308,19 +300,15 @@ footer {
 
     #audioButton {
         width: 33px;
-        /* Ajusta el tamaño del botón */
         height: 33px;
-        /* Ajusta el tamaño del botón */
         border: none;
         border-radius: 50%;
         background-color: white;
-        /* Color del círculo */
         cursor: pointer;
     }
 
     audio {
         display: none;
-        /* Oculta el reproductor de audio predeterminado */
     }
 }
 
@@ -348,19 +336,11 @@ footer {
 
     #audioButton {
         width: 33px;
-        /* Ajusta el tamaño del botón */
         height: 33px;
-        /* Ajusta el tamaño del botón */
         border: none;
         border-radius: 50%;
         background-color: white;
-        /* Color del círculo */
         cursor: pointer;
-    }
-
-    audio {
-        display: none;
-        /* Oculta el reproductor de audio predeterminado */
     }
 }
 
@@ -545,8 +525,6 @@ footer {
 }
 
 @media (max-width: 420px) {
-
-    /* Desde aca*/
     .navbar {
         width: 100%;
         left: 0;

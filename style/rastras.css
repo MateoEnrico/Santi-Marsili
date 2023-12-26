@@ -1,10 +1,11 @@
-*{
+* {
     background-color: white;
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
-body{
+
+body {
     background-color: rgb(255, 255, 255);
 }
 
@@ -19,7 +20,8 @@ header {
     right: 0px;
     margin-bottom: 0px;
     height: 101px;
-    z-index: 1000; /* Asegura que el header esté por encima del resto de elementos */
+    z-index: 1000;
+    /* Asegura que el header esté por encima del resto de elementos */
 }
 
 .top {
@@ -34,33 +36,51 @@ header {
     font-size: 25px;
 }
 
-.sm{
+.sm {
     background-color: rgb(114, 19, 19);
     color: rgb(255, 255, 255);
     text-decoration: underline;
 }
 
-.abajo{
+.abajo {
     margin-top: -7px;
     background-color: rgb(114, 19, 19);
     color: rgb(255, 252, 252);
-    letter-spacing: 10px;
+    letter-spacing: 12px;
     white-space: pre;
-    margin-left: 10px;
+    margin-left: 220px;
 }
 
-.top1{
+.audio-controls {
     position: fixed;
-    top: 23px;
-    left: 20px;
-    width: 200px;
-    height: 50px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
     background-color: rgb(114, 19, 19);
-    color: white;
-    font-size: 25px;
+    width: 33px;
+    border-radius: 100px;
+    left: 50px;
+    top: 35px;
 }
 
-.top2{
+#audioButton {
+    width: 33px;
+    /* Ajusta el tamaño del botón */
+    height: 33px;
+    /* Ajusta el tamaño del botón */
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    /* Color del círculo */
+    cursor: pointer;
+}
+
+audio {
+    display: none;
+    /* Oculta el reproductor de audio predeterminado */
+}
+
+.top2 {
     position: fixed;
     top: 36.5px;
     right: 150px;
@@ -70,18 +90,18 @@ header {
     display: flex;
 }
 
-.ad{
+.ad {
     background-color: rgb(114, 19, 19);
 }
 
-.ig{
+.ig {
     width: 28px;
     height: 28px;
     background-color: rgb(114, 19, 19);
     margin-right: 4px;
 }
 
-.ws{
+.ws {
     width: 42px;
     height: 62px;
     background-color: rgb(114, 19, 19);
@@ -89,7 +109,7 @@ header {
     margin-left: 3px;
 }
 
-audio{
+audio {
     border-radius: 100px;
 }
 
@@ -209,9 +229,33 @@ footer {
 }
 
 @media (max-width: 1020px) {
-    audio{
+    .audio-controls {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        z-index: 2;
+        background-color: rgb(114, 19, 19);
+        width: 33px;
         border-radius: 100px;
-        width: 200px;
+        left: 50px;
+        top: 35px;
+    }
+
+    #audioButton {
+        width: 33px;
+        /* Ajusta el tamaño del botón */
+        height: 33px;
+        /* Ajusta el tamaño del botón */
+        border: none;
+        border-radius: 50%;
+        background-color: white;
+        /* Color del círculo */
+        cursor: pointer;
+    }
+
+    audio {
+        display: none;
+        /* Oculta el reproductor de audio predeterminado */
     }
     .card{
         width: 325px;
@@ -225,12 +269,29 @@ footer {
 }
 
 @media (max-width: 820px) {
-    .top1{
-        margin-left: 5px;
-        margin-top: 450px;
+    .audio-controls {
+        position: fixed;
+        display: flex;
+        align-items: center;
         z-index: 2;
-        background-color: rgb(56, 56, 56);
-        width: 150px;
+        background-color: rgb(114, 19, 19);
+        width: 33px;
+        border-radius: 100px;
+        left: 30px;
+        top: 35px;
+    }
+
+    #audioButton {
+        width: 33px;
+        height: 33px;
+        border: none;
+        border-radius: 50%;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    audio {
+        display: none;
     }
     audio{
         border-radius: 100px;
@@ -240,7 +301,7 @@ footer {
 }
 
 @media (max-width: 730px) {
-    .top2{
+    .top2 {
         position: fixed;
         top: 36.5px;
         right: 100px;
@@ -248,6 +309,26 @@ footer {
         height: 20px;
         background-color: rgb(114, 19, 19);
         display: flex;
+    }
+    .audio-controls {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        z-index: 2;
+        background-color: rgb(114, 19, 19);
+        width: 33px;
+        border-radius: 100px;
+        left: 30px;
+        top: 35px;
+    }
+
+    #audioButton {
+        width: 33px;
+        height: 33px;
+        border: none;
+        border-radius: 50%;
+        background-color: white;
+        cursor: pointer;
     }
 }
 
@@ -263,41 +344,52 @@ footer {
         padding: 10px;
         font-size: 18px;
         font-family: Arial, sans-serif;
-        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+        /* Sombra ligera */
         position: fixed;
-        top: -100%; /* Mueve el menú fuera de la pantalla */
-        max-height: 0; /* Oculta el menú por defecto */
+        top: -100%;
+        /* Mueve el menú fuera de la pantalla */
+        max-height: 0;
+        /* Oculta el menú por defecto */
         transition: top 0.5s ease-in-out, max-height 0.5s ease-in-out;
         border-top-right-radius: 0;
         z-index: -1;
         overflow-y: auto;
     }
-    
-      /* Estilos cuando el menú está abierto */
+
+    /* Estilos cuando el menú está abierto */
     .navbar.show-menu {
-        top: 150px; /* Posición desde arriba */
-        max-height: calc(100% - 200px); /* Altura del menú */
+        top: 150px;
+        /* Posición desde arriba */
+        max-height: calc(100% - 200px);
+        /* Altura del menú */
         transition: top 0.5s ease-in-out, max-height 0.5s ease-in-out;
         width: 100%;
     }
-    .afuera, .adentro {
+
+    .afuera,
+    .adentro {
         display: block;
-        padding: 15px 20px; /* Aumentar el relleno para mejorar la selección en móviles */
+        padding: 15px 20px;
+        /* Aumentar el relleno para mejorar la selección en móviles */
         text-decoration: none;
         color: rgb(255, 255, 255);
         font-size: 18px;
         transition-duration: 0.2s;
         width: 100%;
     }
-    .afuera:hover, .adentro:hover {
+
+    .afuera:hover,
+    .adentro:hover {
         color: rgb(255, 5, 5);
         text-decoration: underline;
     }
-    
+
     .subdiv {
         border-left: 2px solid rgb(255, 255, 255);
         padding-left: 15px;
     }
+
     .top {
         position: fixed;
         top: 0;
@@ -309,53 +401,85 @@ footer {
         color: white;
         font-size: 25px;
     }
-    .top1{
-        margin-left:30px;
+
+    .sm{
+        margin-top: 5px;
+    }
+    .abajo {
+        margin-top: -4px;
+        background-color: rgb(114, 19, 19);
+        color: rgb(255, 252, 252);
+        letter-spacing: 10px;
+        white-space: pre;
+        text-align: center;
+        margin-left: 220px;
+    }
+
+    .audio-controls {
+        position: fixed;
+        display: flex;
+        align-items: center;
         z-index: 2;
-        background-color: rgb(255, 255, 255);
-        width: 150px;
+        background-color: rgb(114, 19, 19);
+        width: 28px;
         border-radius: 100px;
-        margin-top: 70px;
-        height: 35px;
+        left: auto;
+        right: 30px;
+        top: 100px;
     }
-    audio{
-        border-radius: 100px;
-        width: 150px;
-        background-color: none;
-        height: 35px;
+
+    #audioButton {
+        width: 28px;
+        /* Ajusta el tamaño del botón */
+        height: 28px;
+        /* Ajusta el tamaño del botón */
+        border: none;
+        border-radius: 50%;
+        background-color: white;
+        /* Color del círculo */
+        cursor: pointer;
     }
-    .top2{
-        margin-top: 60px;
-        margin-right: 90px;
+
+    audio {
+        display: none;
     }
-    .ig{
-        width: 27px;
-        height: 27px;
+
+    .top2 {
+        margin-top: 65px;
+        margin-right: 50px;
+        height: 30px;
+    }
+
+    .ig {
+        width: 25px;
+        height: 25px;
         background-color: rgb(114, 19, 19);
         margin-right: 5px;
     }
-    
-    .ws{
-        width: 38px;
-        height: 62px;
+
+    .ws {
+        width: 35px;
+        height: 60px;
         background-color: rgb(114, 19, 19);
         margin-top: -18px;
         margin-left: 3px;
     }
+
     .menu-btn {
         display: block;
-        width: 40px; /* Ajusta el ancho según sea necesario */
-        height: 40px; /* Ajusta la altura según sea necesario */
-        background-color: rgb(114, 19, 19); /* Color de fondo del botón */
-        color: white; /* Color del texto del botón */
-        border: none; /* Elimina el borde del botón */
-        font-size: 25px; /* Tamaño del texto */
-        text-align: center; /* Centra el contenido del botón */
-        cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
-        position: fixed; /* Posición fija */
-        top: 90px; /* Posiciona el botón a la altura deseada */
-        right: 60px; /* Posiciona el botón a la distancia deseada desde el borde derecho */
-        z-index: 1500; /* Asegura que el botón esté por encima de otros elementos */
+        border: solid white;
+        background-color: white;
+        -webkit-text-stroke: 0.5px black;
+        color: black;
+        border-radius: 100px;
+        width: 60px;
+        height: 28px;
+        font-size: 17px;
+        text-align: center;
+        position: fixed;
+        top: 100px;
+        left: 40px;
+        z-index: 2;
     }
     main {
         padding-top: 150px;
